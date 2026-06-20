@@ -19,6 +19,84 @@
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* --- Light Theme Variables --- */
+body.light-theme {
+    --bg-color: #f8fafc;
+    --surface-color: rgba(255, 255, 255, 0.7);
+    --surface-border: rgba(0, 0, 0, 0.08);
+    --primary-color: #6d28d9;
+    --primary-glow: rgba(109, 40, 217, 0.12);
+    --secondary-color: #0891b2;
+    --secondary-glow: rgba(8, 145, 178, 0.12);
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+}
+
+/* --- Light Theme Element Adjustments --- */
+body.light-theme .navbar {
+    background: rgba(248, 250, 252, 0.8);
+}
+
+body.light-theme .btn-secondary {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+body.light-theme .btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .feature-card {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+body.light-theme .feature-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+body.light-theme .terminal-container {
+    background: #f1f5f9;
+    border-color: rgba(0, 0, 0, 0.08);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .terminal-header {
+    background: #e2e8f0;
+    border-bottom-color: rgba(0, 0, 0, 0.06);
+}
+
+body.light-theme .terminal-title {
+    color: var(--text-secondary);
+}
+
+body.light-theme .terminal-body {
+    background: #f8fafc;
+}
+
+body.light-theme .terminal-input-line {
+    background: #f1f5f9;
+    border-top-color: rgba(0, 0, 0, 0.06);
+}
+
+body.light-theme #terminal-input {
+    color: var(--text-primary);
+}
+
+body.light-theme .cta-card {
+    background: linear-gradient(135deg, rgba(109, 40, 217, 0.08) 0%, rgba(8, 145, 178, 0.08) 100%);
+    border-color: rgba(109, 40, 217, 0.15);
+}
+
+body.light-theme .cta-form input[type="email"] {
+    background: #ffffff;
+}
+
+body.light-theme .footer {
+    background: #f1f5f9;
+}
+
+
 /* --- Base Resets --- */
 * {
     margin: 0;
@@ -95,6 +173,7 @@ p {
 .gradient-text {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
